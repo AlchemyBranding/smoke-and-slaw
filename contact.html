@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquire — Smoke &amp; Slaw</title>
+  <meta name="description" content="Check availability and get a quote for your wedding or event. We'll come back within 48 hours." />
+  <link rel="icon" type="image/png" href="assets/logo-primary.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo" aria-label="Smoke & Slaw home">
+          <img src="assets/logo-primary.png" alt="Smoke & Slaw" />
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="weddings.html">Weddings</a>
+          <a href="parties.html">Parties</a>
+          <a href="popups.html">Pop-ups</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn--primary nav-cta">Check availability</a>
+        <button class="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="weddings.html">Weddings</a>
+    <a href="parties.html">Parties</a>
+    <a href="popups.html">Pop-ups</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary btn--lg">Check availability</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="background-image:linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('assets/Sausages.JPG'); background-size:cover; background-position:center; background-repeat:no-repeat;">
+      <div class="container">
+        <div class="page-hero__inner">
+          <span class="section-label">Get in touch</span>
+          <h1>Let's sort<br>your <em style="color:var(--red);font-style:normal;">date</em></h1>
+          <p>Fill in the form below and we'll come back to you within 48 hours with availability and a quote. No pushy sales process — just a straight answer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM + CONTACT INFO -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2" style="gap:5rem; align-items:flex-start;">
+
+          <!-- ENQUIRY FORM -->
+          <div>
+            <form class="enquiry-form" novalidate>
+              <div class="form-grid" style="margin-bottom:1.25rem;">
+                <div class="form-group">
+                  <label class="form-label" for="name">Your name <span style="color:var(--red);">*</span></label>
+                  <input class="form-input" type="text" id="name" name="name" placeholder="e.g. Sarah & Tom" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email address <span style="color:var(--red);">*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:1.25rem;">
+                <label class="form-label" for="event-type">Type of event <span style="color:var(--red);">*</span></label>
+                <select class="form-select" id="event-type" name="event-type" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="party">Private party / birthday</option>
+                  <option value="corporate">Corporate event</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-grid" style="margin-bottom:1.25rem;">
+                <div class="form-group">
+                  <label class="form-label" for="event-date">Event date</label>
+                  <input class="form-input" type="date" id="event-date" name="event-date" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="guests">Approximate guest count</label>
+                  <input class="form-input" type="number" id="guests" name="guests" placeholder="e.g. 120" min="1" />
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:2rem;">
+                <label class="form-label" for="message">Anything else we should know?</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Venue location, dietary requirements, questions — whatever's useful."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Send enquiry</button>
+              <p style="margin-top:0.75rem; font-size:0.8rem; color:var(--muted); text-align:center;">We respond within 48 hours. No spam, no sales calls.</p>
+            </form>
+          </div>
+
+          <!-- CONTACT DETAILS -->
+          <div>
+            <div class="stack stack--lg">
+
+              <div>
+                <h3 style="margin-bottom:0.75rem; font-size:1.2rem;">Other ways to reach us</h3>
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <div class="feature-item__icon"></div>
+                    <div class="feature-item__text">
+                      <h4>Email</h4>
+                      <p><a href="mailto:hello@smokeandslaw.co.uk" style="color:var(--red);">hello@smokeandslaw.co.uk</a></p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-item__icon"></div>
+                    <div class="feature-item__text">
+                      <h4>Instagram</h4>
+                      <p><a href="https://instagram.com/smoke_n_slaw" target="_blank" rel="noopener" style="color:var(--red);">@smoke_n_slaw</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div>
+                <h3 style="margin-bottom:1rem; font-size:1.2rem;">What to include</h3>
+                <p style="margin-bottom:1rem; font-size:0.9rem;">The more you can tell us upfront, the faster we can come back with something useful. Helpful things to include:</p>
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <div class="feature-item__icon"></div>
+                    <div class="feature-item__text"><h4>Your event date (or a rough window)</h4></div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-item__icon"></div>
+                    <div class="feature-item__text"><h4>Approximate guest numbers</h4></div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-item__icon"></div>
+                    <div class="feature-item__text"><h4>Venue location or area</h4></div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-item__icon"></div>
+                    <div class="feature-item__text"><h4>Any known dietary requirements</h4></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="menu-section">
+                <p class="menu-section__label">Response time</p>
+                <p style="font-size:0.95rem; color:var(--off-white);">We aim to respond to every enquiry within <strong style="color:var(--white);">48 hours</strong>, usually sooner. If you haven't heard back, check your spam folder or drop us a line on Instagram.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo-secondary.png" alt="Smoke & Slaw" />
+          <p>Low and slow BBQ catering for weddings and private events across the UK.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="weddings.html">Weddings</a></li>
+            <li><a href="parties.html">Parties</a></li>
+            <li><a href="popups.html">Pop-ups</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-nav">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:hello@smokeandslaw.co.uk">hello@smokeandslaw.co.uk</a></li>
+            <li><a href="https://instagram.com/smoke_n_slaw" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Smoke &amp; Slaw. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/smoke_n_slaw" target="_blank" rel="noopener" class="social-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
