@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smoke & Slaw — Coming Soon</title>
+  <meta name="description" content="Low and slow BBQ catering for weddings and events. Something delicious is coming." />
+  <link rel="icon" type="image/png" href="assets/logo-primary.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:    #0F0F0F;
+      --red:   #C1121F;
+      --white: #FFFFFF;
+      --muted: #999999;
+      --font-head: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--font-body);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Background image */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/Beef_Brisket.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    /* Red glow */
+    body::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(193, 18, 31, 0.12) 0%, transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .holding-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      max-width: 560px;
+    }
+
+    .holding-logo img {
+      height: clamp(100px, 20vw, 160px);
+      width: auto;
+    }
+
+    .holding-divider {
+      width: 48px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    .holding-headline {
+      font-family: var(--font-head);
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+
+    .holding-headline em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .holding-sub {
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 40ch;
+      margin-inline: auto;
+    }
+
+    .holding-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .holding-contact p {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      font-family: var(--font-head);
+    }
+
+    .holding-links {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .holding-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .holding-links a:hover { color: var(--red); }
+
+    .holding-links .sep {
+      color: #333;
+      font-size: 0.8rem;
+    }
+
+    .holding-footer {
+      position: absolute;
+      bottom: 1.5rem;
+      font-size: 0.75rem;
+      color: #444;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="holding-inner">
+
+    <div class="holding-logo">
+      <img src="assets/logo-primary.png" alt="Smoke & Slaw" />
+    </div>
+
+    <div class="holding-divider"></div>
+
+    <h1 class="holding-headline">
+      Something<br><em>good</em> is coming
+    </h1>
+
+    <p class="holding-sub">
+      Low and slow BBQ catering for weddings and events. We're getting things ready — check back soon.
+    </p>
+
+    <div class="holding-contact">
+      <p>In the meantime</p>
+      <div class="holding-links">
+        <a href="mailto:hello@smokeandslaw.co.uk">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          hello@smokeandslaw.co.uk
+        </a>
+        <span class="sep">·</span>
+        <a href="https://instagram.com/smoke_n_slaw" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          @smoke_n_slaw
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="holding-footer">&copy; 2025 Smoke &amp; Slaw</p>
+
+</body>
+</html>
