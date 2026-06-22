@@ -39,6 +39,38 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
   }
 });
 
+// Testimonial carousel
+const carousel = document.querySelector('.testimonial-carousel');
+if (carousel) {
+  const track = carousel.querySelector('.testimonial-track');
+  const dots = carousel.querySelectorAll('.t-dot');
+  const total = track.children.length;
+  let current = 0;
+  let timer;
+
+  dots.forEach((d, i) => {
+    d.style.cssText = 'width:8px;height:8px;border-radius:50%;border:none;cursor:pointer;padding:0;transition:background 0.3s;';
+  });
+
+  function goTo(n) {
+    current = (n + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => {
+      d.style.background = i === current ? 'var(--red)' : 'rgba(255,255,255,0.2)';
+    });
+  }
+
+  function startTimer() { timer = setInterval(() => goTo(current + 1), 5000); }
+  function stopTimer() { clearInterval(timer); }
+
+  dots.forEach((d, i) => d.addEventListener('click', () => { stopTimer(); goTo(i); startTimer(); }));
+  carousel.addEventListener('mouseenter', stopTimer);
+  carousel.addEventListener('mouseleave', startTimer);
+
+  goTo(0);
+  startTimer();
+}
+
 // Enquiry form — basic client-side validation + success state
 const enquiryForm = document.querySelector('.enquiry-form');
 if (enquiryForm) {
