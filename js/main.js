@@ -39,6 +39,14 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
   }
 });
 
+// Testimonial quote marks
+document.querySelectorAll('.testimonial-track > div > div').forEach(card => {
+  const q = document.createElement('div');
+  q.innerHTML = '“';
+  q.style.cssText = 'font-size:3.5rem;color:var(--red);line-height:0.8;margin-bottom:0.5rem;font-family:Georgia,serif;font-weight:700;';
+  card.insertBefore(q, card.firstChild);
+});
+
 // Testimonial carousel
 const carousel = document.querySelector('.testimonial-carousel');
 if (carousel) {
