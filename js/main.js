@@ -39,6 +39,25 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
   }
 });
 
+// Auto-hide past events
+const eventCards = document.querySelectorAll('.event-card');
+if (eventCards.length) {
+  const MONTHS = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+  const today = new Date(); today.setHours(0,0,0,0);
+  let visible = 0;
+  eventCards.forEach(card => {
+    const day = parseInt(card.querySelector('.event-card__date-day')?.textContent);
+    const mon = card.querySelector('.event-card__date-month')?.textContent.trim();
+    if (!day || !(mon in MONTHS)) return;
+    const eventDate = new Date(today.getFullYear(), MONTHS[mon], day);
+    if (eventDate < today) { card.hidden = true; } else { visible++; }
+  });
+  if (visible === 0) {
+    const list = eventCards[0].closest('.stack');
+    if (list) list.innerHTML = '<p style="color:var(--muted);">No upcoming dates confirmed yet. Follow us on Instagram for the latest.</p>';
+  }
+}
+
 // Testimonial quote marks
 document.querySelectorAll('.testimonial-track > div > div').forEach(card => {
   const q = document.createElement('div');
