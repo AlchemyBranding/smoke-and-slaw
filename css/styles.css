@@ -1057,6 +1057,7 @@ p {
   height: 160px;
   margin-top: -30px;
   margin-bottom: calc(1rem - 30px);
+  margin-left: -15px;
 }
 
 .footer-brand p {
