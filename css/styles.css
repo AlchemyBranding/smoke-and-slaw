@@ -1054,8 +1054,9 @@ p {
 }
 
 .footer-brand img {
-  height: 100px;
-  margin-bottom: 1rem;
+  height: 160px;
+  margin-top: -30px;
+  margin-bottom: calc(1rem - 30px);
 }
 
 .footer-brand p {
