@@ -192,6 +192,16 @@ p {
   transform: translateY(-1px);
 }
 
+.nav-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border: none;
+}
+.nav-whatsapp:hover {
+  background: #1ebe5d;
+  color: #fff;
+}
+
 .btn--primary {
   background: var(--red);
   color: var(--white);
