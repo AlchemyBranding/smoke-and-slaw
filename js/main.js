@@ -98,14 +98,3 @@ if (carousel) {
   startTimer();
 }
 
-// Enquiry form — basic client-side validation + success state
-const enquiryForm = document.querySelector('.enquiry-form');
-if (enquiryForm) {
-  enquiryForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = enquiryForm.querySelector('[type="submit"]');
-    btn.textContent = 'Sent — we\'ll be in touch';
-    btn.disabled = true;
-    btn.style.opacity = '0.7';
-  });
-}

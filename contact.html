@@ -60,7 +60,9 @@
 
           <!-- ENQUIRY FORM -->
           <div>
-            <form class="enquiry-form" novalidate>
+            <form class="enquiry-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="5a65838e-dfe3-47b0-8455-4658b001df41" />
+              <input type="hidden" name="subject" value="New enquiry — Smoke &amp; Slaw" />
               <div class="form-grid" style="margin-bottom:1.25rem;">
                 <div class="form-group">
                   <label class="form-label" for="name">Your name <span style="color:var(--red);">*</span></label>
