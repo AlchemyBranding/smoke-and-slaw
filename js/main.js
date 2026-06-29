@@ -58,6 +58,33 @@ if (eventCards.length) {
   }
 }
 
+// Enquiry form — Web3Forms submission with inline success state
+const enquiryForm = document.querySelector('.enquiry-form');
+if (enquiryForm) {
+  enquiryForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = enquiryForm.querySelector('[type="submit"]');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(enquiryForm)
+      });
+      if (res.ok) {
+        enquiryForm.hidden = true;
+        enquiryForm.closest('div').querySelector('.form-success').hidden = false;
+      } else {
+        btn.textContent = 'Something went wrong — please email us directly';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'Something went wrong — please email us directly';
+      btn.disabled = false;
+    }
+  });
+}
+
 // Testimonial quote marks
 document.querySelectorAll('.testimonial-track > div > div').forEach(card => {
   const q = document.createElement('div');
