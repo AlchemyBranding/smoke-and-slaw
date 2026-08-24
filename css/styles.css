@@ -352,7 +352,7 @@ p {
   position: relative;
   overflow: hidden;
   background-color: var(--bg);
-  background-image: url('../assets/Beef_Brisket.png');
+  background-image: url('../assets/Beef_Brisket.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wedding BBQ Catering - Smoke & Slaw</title>
   <meta name="description" content="Relaxed, festival-style BBQ catering for weddings. Brisket, pulled pork, and sausage served from a counter. No fuss, no formality. South Wales based." />
-  <link rel="icon" type="image/png" href="assets/logo-primary.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/Platter.webp" fetchpriority="high" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="canonical" href="https://smokeandslaw.co.uk/weddings.html" />
   <meta property="og:type" content="website" />
@@ -16,11 +18,11 @@
   <meta property="og:url" content="https://smokeandslaw.co.uk/weddings.html" />
   <meta property="og:title" content="Wedding BBQ Catering — Smoke &amp; Slaw" />
   <meta property="og:description" content="Relaxed, festival-style BBQ catering for weddings. Brisket, pulled pork, and sausage served from a counter. No fuss, no formality. South Wales based." />
-  <meta property="og:image" content="https://smokeandslaw.co.uk/assets/Beef_Brisket_table.png" />
+  <meta property="og:image" content="https://smokeandslaw.co.uk/assets/og-share.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Wedding BBQ Catering — Smoke &amp; Slaw" />
   <meta name="twitter:description" content="Relaxed, festival-style BBQ catering for weddings. Brisket, pulled pork, and sausage served from a counter. No fuss, no formality. South Wales based." />
-  <meta name="twitter:image" content="https://smokeandslaw.co.uk/assets/Beef_Brisket_table.png" />
+  <meta name="twitter:image" content="https://smokeandslaw.co.uk/assets/og-share.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -85,7 +87,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="header-logo" aria-label="Smoke & Slaw home">
-          <img src="assets/logo-primary.png" alt="Smoke & Slaw" />
+          <img decoding="async" src="assets/logo-primary.webp" alt="Smoke & Slaw" />
         </a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="weddings.html" class="active">Weddings</a>
@@ -113,7 +115,7 @@
   <main>
 
     <!-- PAGE HERO -->
-    <section class="page-hero" style="background-image:linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('assets/Platter.png'); background-size:cover; background-position:center; background-repeat:no-repeat;">
+    <section class="page-hero" style="background-image:linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('assets/Platter.webp'); background-size:cover; background-position:center; background-repeat:no-repeat;">
       <div class="container">
         <div class="page-hero__inner">
           <span class="section-label">Wedding catering</span>
@@ -165,7 +167,7 @@
             </div>
           </div>
 
-          <img src="assets/Beef_Brisket_table.png" alt="Smoke & Slaw at a wedding" style="width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:4px;" />
+          <img loading="lazy" decoding="async" src="assets/Beef_Brisket_table.webp" alt="Smoke & Slaw at a wedding" style="width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:4px;" />
         </div>
       </div>
     </section>
@@ -181,7 +183,7 @@
 
         <!-- House Special -->
         <div style="margin-bottom:1.5rem; border:1px solid rgba(193,18,31,0.4); border-radius:4px; overflow:hidden; display:grid; grid-template-columns:1fr 1fr; align-items:stretch;">
-          <img src="assets/Meat_Meat_Meat.png" alt="Meat Meat Meat" style="width:100%; aspect-ratio:1; object-fit:contain; object-position:center; background:#1a1a1a; display:block;" />
+          <img loading="lazy" decoding="async" src="assets/Meat_Meat_Meat.webp" alt="Meat Meat Meat" style="width:100%; aspect-ratio:1; object-fit:contain; object-position:center; background:#1a1a1a; display:block;" />
           <div class="menu-section" style="border:none;">
             <p class="menu-section__label" style="color:var(--red);">House special</p>
             <div class="menu-item">
@@ -289,7 +291,7 @@
     <section class="section">
       <div class="container">
         <div class="grid-2" style="align-items:center; gap:4rem;">
-          <img src="images/meat_platter.JPG" alt="Smoke & Slaw wedding service" style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:4px;" />
+          <img loading="lazy" decoding="async" src="images/meat_platter.webp" alt="Smoke & Slaw wedding service" style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:4px;" />
 
           <div>
             <span class="section-label">Is this right for you?</span>
@@ -412,7 +414,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="assets/logo-secondary.png" alt="Smoke & Slaw" />
+          <img loading="lazy" decoding="async" src="assets/logo-secondary.webp" alt="Smoke & Slaw" />
           <p>Low and slow BBQ catering for weddings and private events across South Wales.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
@@ -445,6 +447,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

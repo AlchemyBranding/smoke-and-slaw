@@ -6,10 +6,12 @@
   <title>Smoke & Slaw - BBQ Catering for Weddings & Events</title>
   <meta name="description" content="Low and slow BBQ catering for weddings and private events across South Wales. Brisket, pulled pork, sausage. No fuss, proper food." />
   <meta name="google-site-verification" content="1n2yQBRRlVRESEU1yZR7p3iO7G1zE1HWLxvRaysqRQg" />
-  <link rel="icon" type="image/png" href="assets/logo-primary.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/Beef_Brisket.webp" fetchpriority="high" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="canonical" href="https://smokeandslaw.co.uk/" />
   <meta property="og:type" content="website" />
@@ -17,11 +19,11 @@
   <meta property="og:url" content="https://smokeandslaw.co.uk/" />
   <meta property="og:title" content="Smoke &amp; Slaw — BBQ Catering for Weddings &amp; Events in South Wales" />
   <meta property="og:description" content="Low and slow BBQ catering for weddings and private events across South Wales. Brisket, pulled pork, sausage. No fuss, proper food." />
-  <meta property="og:image" content="https://smokeandslaw.co.uk/assets/Beef_Brisket_table.png" />
+  <meta property="og:image" content="https://smokeandslaw.co.uk/assets/og-share.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Smoke &amp; Slaw — BBQ Catering for Weddings &amp; Events in South Wales" />
   <meta name="twitter:description" content="Low and slow BBQ catering for weddings and private events across South Wales. Brisket, pulled pork, sausage. No fuss, proper food." />
-  <meta name="twitter:image" content="https://smokeandslaw.co.uk/assets/Beef_Brisket_table.png" />
+  <meta name="twitter:image" content="https://smokeandslaw.co.uk/assets/og-share.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,7 +112,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="header-logo" aria-label="Smoke & Slaw home">
-          <img src="assets/logo-primary.png" alt="Smoke & Slaw" />
+          <img decoding="async" src="assets/logo-primary.webp" alt="Smoke & Slaw" />
         </a>
 
         <nav class="nav-links" aria-label="Main navigation">
@@ -143,11 +145,11 @@
 
     <!-- HERO -->
     <section class="hero">
-      <img src="assets/icon.png" alt="" class="hero-icon-overlay" aria-hidden="true" />
+      <img decoding="async" src="assets/icon.webp" alt="" class="hero-icon-overlay" aria-hidden="true" />
       <div class="container">
         <div class="hero-content">
           <div class="hero-logo">
-            <img src="assets/logo-primary.png" alt="Smoke & Slaw" />
+            <img fetchpriority="high" decoding="async" src="assets/logo-primary.webp" alt="Smoke & Slaw" />
           </div>
           <span class="hero-eyebrow">BBQ Catering · South Wales &amp; the Welsh Borders</span>
           <h1>Wood-fired BBQ.<br><em>Smoked overnight.</em><br>Served at its best.</h1>
@@ -179,7 +181,7 @@
         <div class="food-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
 
           <article class="food-card">
-            <img class="food-card__img" src="assets/Beef_Brisket_table.png" alt="Beef Brisket" />
+            <img loading="lazy" decoding="async" class="food-card__img" src="assets/Beef_Brisket_table.webp" alt="Beef Brisket" />
             <div class="food-card__body">
               <p class="food-card__tag">Signature</p>
               <h3 class="food-card__title">Beef Brisket</h3>
@@ -188,7 +190,7 @@
           </article>
 
           <article class="food-card">
-            <img class="food-card__img" src="images/traditional-barbecue-pulled-pork-slow-cooked-pulled-pork-shoulder-juicy-pork-meat-cooked-smoker.jpg" alt="Pulled Pork" />
+            <img loading="lazy" decoding="async" class="food-card__img" src="images/traditional-barbecue-pulled-pork-slow-cooked-pulled-pork-shoulder-juicy-pork-meat-cooked-smoker.webp" alt="Pulled Pork" />
             <div class="food-card__body">
               <p class="food-card__tag">Classic</p>
               <h3 class="food-card__title">Pulled Pork</h3>
@@ -197,7 +199,7 @@
           </article>
 
           <article class="food-card">
-            <img class="food-card__img" src="assets/Sausages.JPG" alt="Smokehouse Sausage" />
+            <img loading="lazy" decoding="async" class="food-card__img" src="assets/Sausages.webp" alt="Smokehouse Sausage" />
             <div class="food-card__body">
               <p class="food-card__tag">House favourite</p>
               <h3 class="food-card__title">Smokehouse Sausage</h3>
@@ -206,7 +208,7 @@
           </article>
 
           <article class="food-card">
-            <img class="food-card__img" src="images/lava-chicken.jpeg" alt="Steve's Lava Chicken" style="object-position:center 70%;" />
+            <img loading="lazy" decoding="async" class="food-card__img" src="images/lava-chicken.webp" alt="Steve's Lava Chicken" style="object-position:center 70%;" />
             <div class="food-card__body">
               <p class="food-card__tag">Chef's special</p>
               <h3 class="food-card__title">Steve's Lava Chicken</h3>
@@ -234,7 +236,7 @@
 
         <!-- HOUSE SPECIAL -->
         <div class="house-special">
-          <img src="images/Meat_Meat_Meat.png" alt="Meat Meat Meat" />
+          <img loading="lazy" decoding="async" src="images/Meat_Meat_Meat.webp" alt="Meat Meat Meat" />
           <div class="menu-section" style="border:none;">
             <p class="menu-section__label" style="color:var(--red);">House special</p>
             <div class="menu-item">
@@ -353,12 +355,12 @@
         </div>
 
         <div class="social-grid" style="margin-bottom: 2rem;">
-          <div class="social-grid__item"><img src="images/IMG_0018.png" alt="Smoke & Slaw at an event" /></div>
-          <div class="social-grid__item"><img src="images/IMG_0019.jpg" alt="Smoke & Slaw food" /></div>
-          <div class="social-grid__item"><img src="images/IMG_0056.jpg" alt="Smoke & Slaw service" /></div>
-          <div class="social-grid__item"><img src="images/IMG_0057.jpg" alt="Smoke & Slaw event" /></div>
-          <div class="social-grid__item"><img src="images/IMG_9043.jpg" alt="Smoke & Slaw BBQ" /></div>
-          <div class="social-grid__item"><img src="images/IMG_9108.jpg" alt="Smoke & Slaw food" /></div>
+          <div class="social-grid__item"><img loading="lazy" decoding="async" src="images/IMG_0018.webp" alt="Smoke & Slaw at an event" /></div>
+          <div class="social-grid__item"><img loading="lazy" decoding="async" src="images/IMG_0019.webp" alt="Smoke & Slaw food" /></div>
+          <div class="social-grid__item"><img loading="lazy" decoding="async" src="images/IMG_0056.webp" alt="Smoke & Slaw service" /></div>
+          <div class="social-grid__item"><img loading="lazy" decoding="async" src="images/IMG_0057.webp" alt="Smoke & Slaw event" /></div>
+          <div class="social-grid__item"><img loading="lazy" decoding="async" src="images/IMG_9043.webp" alt="Smoke & Slaw BBQ" /></div>
+          <div class="social-grid__item"><img loading="lazy" decoding="async" src="images/IMG_9108.webp" alt="Smoke & Slaw food" /></div>
         </div>
 
         <div class="flex-center">
@@ -488,7 +490,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="assets/logo-secondary.png" alt="Smoke & Slaw" />
+          <img loading="lazy" decoding="async" src="assets/logo-secondary.webp" alt="Smoke & Slaw" />
           <p>Low and slow BBQ catering for weddings and private events across South Wales.</p>
         </div>
 
@@ -525,6 +527,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

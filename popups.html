@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pop-ups &amp; Street Food Events - Smoke &amp; Slaw</title>
   <meta name="description" content="Find Smoke & Slaw at pop-up events and street food markets near you. Check upcoming dates and locations." />
-  <link rel="icon" type="image/png" href="assets/logo-primary.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/PopUp2.webp" fetchpriority="high" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="canonical" href="https://smokeandslaw.co.uk/popups.html" />
   <meta property="og:type" content="website" />
@@ -16,11 +18,11 @@
   <meta property="og:url" content="https://smokeandslaw.co.uk/popups.html" />
   <meta property="og:title" content="Pop-ups &amp; Street Food Events — Smoke &amp; Slaw" />
   <meta property="og:description" content="Find Smoke &amp; Slaw at pop-up events and street food markets near you. Check upcoming dates and locations." />
-  <meta property="og:image" content="https://smokeandslaw.co.uk/assets/PopUp2.png" />
+  <meta property="og:image" content="https://smokeandslaw.co.uk/assets/og-popups.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pop-ups &amp; Street Food Events — Smoke &amp; Slaw" />
   <meta name="twitter:description" content="Find Smoke &amp; Slaw at pop-up events and street food markets near you. Check upcoming dates and locations." />
-  <meta name="twitter:image" content="https://smokeandslaw.co.uk/assets/PopUp2.png" />
+  <meta name="twitter:image" content="https://smokeandslaw.co.uk/assets/og-popups.jpg" />
 </head>
 <body>
 
@@ -29,7 +31,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="header-logo" aria-label="Smoke & Slaw home">
-          <img src="assets/logo-primary.png" alt="Smoke & Slaw" />
+          <img decoding="async" src="assets/logo-primary.webp" alt="Smoke & Slaw" />
         </a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="events.html">Events</a>
@@ -55,7 +57,7 @@
   <main>
 
     <!-- PAGE HERO -->
-    <section class="page-hero" style="background-image:linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('assets/PopUp2.png'); background-size:cover; background-position:center; background-repeat:no-repeat;">
+    <section class="page-hero" style="background-image:linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('assets/PopUp2.webp'); background-size:cover; background-position:center; background-repeat:no-repeat;">
       <div class="container">
         <div class="page-hero__inner">
           <span class="section-label">Pop-ups &amp; street food</span>
@@ -194,7 +196,7 @@
     <section class="section section--alt" hidden>
       <div class="container">
         <div style="text-align:center; max-width:480px; margin-inline:auto;">
-          <img src="assets/icon.png" alt="" style="width:56px; margin-inline:auto; margin-bottom:1.5rem; opacity:0.6;" />
+          <img loading="lazy" decoding="async" src="assets/icon.webp" alt="" style="width:56px; margin-inline:auto; margin-bottom:1.5rem; opacity:0.6;" />
           <h2 style="margin-bottom:1rem;">Stay in the loop</h2>
           <p style="margin-bottom:2rem; margin-inline:auto;">We announce new pop-up dates, last-minute events, and behind-the-scenes prep on Instagram. It's the best place to follow along.</p>
           <a href="https://instagram.com/smoke_n_slaw" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
@@ -215,7 +217,7 @@
             <p style="margin-bottom:1.5rem;">If you run a market, festival, venue, or event and want to bring Smoke &amp; Slaw in, get in touch. We're always open to new spots - especially if you've got a good crowd and somewhere decent to set up.</p>
             <a href="contact.html" class="btn btn--outline-red">Get in touch</a>
           </div>
-          <img src="assets/PopUp.png" alt="Smoke & Slaw pop-up" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px;" />
+          <img loading="lazy" decoding="async" src="assets/PopUp.webp" alt="Smoke & Slaw pop-up" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px;" />
         </div>
       </div>
     </section>
@@ -227,7 +229,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="assets/logo-secondary.png" alt="Smoke & Slaw" />
+          <img loading="lazy" decoding="async" src="assets/logo-secondary.webp" alt="Smoke & Slaw" />
           <p>Low and slow BBQ catering for weddings and private events across South Wales.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
@@ -259,6 +261,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
