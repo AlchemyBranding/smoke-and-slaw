@@ -1,0 +1,5 @@
+
+# Source photos and working files live in Dropbox, not here
+images/*.HEIC
+screenshots/
+.claude/
