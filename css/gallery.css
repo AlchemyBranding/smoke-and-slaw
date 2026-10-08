@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------
+   PAST EVENTS GALLERY (events.html)
+   Kept out of styles.css: /css/* is served immutable for a year,
+   so a new file is the only way returning visitors pick it up.
+   ------------------------------------------------------------ */
+.gallery {
+  position: relative;
+}
+
+.gallery__track {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0 0 1rem;
+  list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--red) var(--bg-alt);
+}
+
+.gallery__track::-webkit-scrollbar { height: 6px; }
+.gallery__track::-webkit-scrollbar-track { background: var(--bg-alt); border-radius: 3px; }
+.gallery__track::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
+
+.gallery__track:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
+}
+
+.gallery__item {
+  position: relative;
+  flex: 0 0 auto;
+  height: clamp(260px, 60vw, 420px);
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-alt);
+  scroll-snap-align: start;
+}
+
+.gallery__item img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 85vw;
+  object-fit: cover;
+}
+
+.gallery__item figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2rem 1rem 0.85rem;
+  background: linear-gradient(transparent, rgba(10, 10, 10, 0.85));
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--off-white);
+}
+
+.gallery__btn {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: rgba(15, 15, 15, 0.85);
+  color: var(--white);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background var(--trans), opacity var(--trans);
+}
+
+.gallery__btn:hover,
+.gallery__btn:focus-visible { background: var(--red); }
+.gallery__btn:disabled { opacity: 0; pointer-events: none; }
+.gallery__btn--prev { left: -0.5rem; }
+.gallery__btn--next { right: -0.5rem; }
+
+@media (min-width: 900px) and (hover: hover) {
+  .gallery__btn { display: flex; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery__track { scroll-behavior: auto; }
+}
